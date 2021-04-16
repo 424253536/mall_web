@@ -19,6 +19,7 @@ public class indexController {
 
     @GetMapping("/findById")
     public String findById(){
+        System.out.println();
         String name = userFeign.findById();
         return name;
     }
